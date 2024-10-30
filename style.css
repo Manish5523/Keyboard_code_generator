@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container{
+    user-select: none;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    gap: 50px;
+    background: url(./Assets/pic1.jpg);
+    background-size: cover;
+    font-family: "Playwrite GB S", serif;
+    animation: fade-in 2s ease;
+}
+
+.main-box{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 70px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    align-items: center;
+    background: linear-gradient();
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 50px 25px rgb(255, 255, 255);
+    padding: 10px 50px; 
+    border-radius: 10px;
+}
+
+.main-box h1{
+    font-size: 30px;
+}
+
+#head span{
+    color: blue;
+    text-shadow: 2px 2px 5px black;
+    -webkit-text-stroke: 0.2px teal;
+}
+
+
+.keyCode{
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    box-shadow: 0 0 50px 10px white; 
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
